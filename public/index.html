@@ -34,6 +34,8 @@
 
   </script>
   <style>
+
+
     * {
 
       font-family: 'Spicy Rice', cursive;
@@ -258,14 +260,14 @@
     var datadep = localStorage.getItem('getDep');
     console.log(datadep)
   </script>
-  <template id="detailP.html">
-    <ons-page>
+  <template id="detailP.html" >
+    <ons-page >
 
-      <ons-toolbar>
+      <ons-toolbar style="background-color: #eb6105">
         <div class="left">
           <ons-back-button>Back</ons-back-button>
         </div>
-        <div class="center">Detail</div>
+        <div class="center" style="color: white">Detail</div>
       </ons-toolbar>
 
       <div id="showDep"></div>
@@ -273,7 +275,7 @@
       <script id="Detailproduct_template" type="text/template">
           <ons-card>
              
-              <ons-carousel swipeable auto-scroll overscrollable id="carousel" style="height: 300px;">
+              <ons-carousel swipeable auto-scroll overscrollable id="carousel" style="height: 300px;background-color:white"  >
                 <% dataDep.forEach(function(dataDep){   
                   var data = dataDep.data(); %>
                     <ons-carousel-item id="carousel1DeP" style="background: url(' <%= data.photo[0]%>') no-repeat center; background-size: contain;">
